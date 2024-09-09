@@ -298,8 +298,57 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #fe9839;//$blue !default;
+$secondary:     #fbf9c6;//$gray-600 !default;
+
+$primary-50: #fff8ed;
+$primary-100: #ffeed4;
+$primary-200: #ffd9a9;
+$primary-300: #ffba69;
+$primary-400: #fe9839;
+$primary-500: #fc7913;
+$primary-600: #ed5e09;
+$primary-700: #c54509;
+$primary-800: #9c3710;
+$primary-900: #7e2f10;
+$primary-950: #441609;
+
+$secondary-50: #fdfce9;
+$secondary-100: #fbf9c6;
+$secondary-200: #f9f19a;
+$secondary-300: #f4e050;
+$secondary-400: #efcd20;
+$secondary-500: #dfb413;
+$secondary-600: #c08d0e;
+$secondary-700: #9a660e;
+$secondary-800: #7f5114;
+$secondary-900: #6c4217;
+$secondary-950: #3f2209;
+
+$neutral-50: #f6f6f5;
+$neutral-100: #e7e7e6;
+$neutral-200: #d1d1d0;
+$neutral-300: #b1b0af;
+$neutral-400: #8a8a86;
+$neutral-500: #6f6f6b;
+$neutral-600: #5e5d5c;
+$neutral-700: #504f4e;
+$neutral-800: #464644;
+$neutral-900: #3d3d3c;
+$neutral-950: #292928;
+
+$notice-50: #f5faf3;
+$notice-100: #e7f4e4;
+$notice-200: #d0e8ca;
+$notice-300: #a9d5a0;
+$notice-400: #84be79;
+$notice-500: #579c4b;
+$notice-600: #448039;
+$notice-700: #386530;
+$notice-800: #2f512a;
+$notice-900: #284324;
+$notice-950: #11240f;
+
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -312,6 +361,52 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+
+  "primary-50": $primary-50,
+  "primary-100": $primary-100,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+  "primary-500": $primary-500,
+  "primary-600": $primary-600,
+  "primary-700": $primary-700,
+  "primary-800": $primary-800,
+  "primary-900": $primary-900,
+  "primary-950": $primary-950,
+  "secondary-50": $secondary-50,
+  "secondary-100": $secondary-100,
+  "secondary-200": $secondary-200,
+  "secondary-300": $secondary-300,
+  "secondary-400": $secondary-400,
+  "secondary-500": $secondary-500,
+  "secondary-600": $secondary-600,
+  "secondary-700": $secondary-700,
+  "secondary-800": $secondary-800,
+  "secondary-900": $secondary-900,
+  "secondary-950": $secondary-950,
+  "neutral-50": $neutral-50,
+  "neutral-100": $neutral-100,
+  "neutral-200": $neutral-200,
+  "neutral-300": $neutral-300,
+  "neutral-400": $neutral-400,
+  "neutral-500": $neutral-500,
+  "neutral-600": $neutral-600,
+  "neutral-700": $neutral-700,
+  "neutral-800": $neutral-800,
+  "neutral-900": $neutral-900,
+  "neutral-950": $neutral-950,
+  "notice-50": $notice-50,
+  "notice-100": $notice-100,
+  "notice-200": $notice-200,
+  "notice-300": $notice-300,
+  "notice-400": $notice-400,
+  "notice-500": $notice-500,
+  "notice-600": $notice-600,
+  "notice-700": $notice-700,
+  "notice-800": $notice-800,
+  "notice-900": $notice-900,
+  "notice-950": $notice-950,
+
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -412,9 +507,14 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,
+  4: $spacer,
+  5: $spacer * 1.5,
+  6: $spacer * 2,
+  7: $spacer * 2.5,
+  8: $spacer * 3,
+  9: $spacer * 3.5,
+  10: $spacer * 4,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -435,13 +535,18 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+// $body-color:                $gray-900 !default;
+$body-color:                $neutral-950 !default;
 $body-bg:                   $white !default;
 
-$body-secondary-color:      rgba($body-color, .75) !default;
-$body-secondary-bg:         $gray-200 !default;
+// $body-secondary-color:      rgba($body-color, .75) !default;
+$body-secondary-color:      $neutral-700 !default;
+// $body-secondary-bg:         $gray-200 !default;
+$body-secondary-bg:         $neutral-50 !default;
 
-$body-tertiary-color:       rgba($body-color, .5) !default;
+// $body-tertiary-color:       rgba($body-color, .5) !default;
+$body-tertiary-color:       $neutral-400 !default;
+// $body-tertiary-bg:          $gray-100 !default;
 $body-tertiary-bg:          $gray-100 !default;
 
 $body-emphasis-color:       $black !default;
@@ -539,16 +644,21 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+// $border-color:                $gray-300 !default;
+$border-color:                $neutral-200 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
+$border-radius:            1rem !default;
+
+$border-radius-xxs:           .25rem !default;
+$border-radius-xs:            .5rem !default;
+$border-radius-sm:            .75rem !default;
+$border-radius-md:            1rem !default;
+$border-radius-lg:            1.25rem !default;
+$border-radius-xl:            1.5rem !default;
+$border-radius-xxl:           2rem !default;      //32px(沒用到也不要刪
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
