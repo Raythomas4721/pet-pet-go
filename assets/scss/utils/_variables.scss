@@ -374,7 +374,7 @@ $theme-colors: (
   "primary-900": $primary-900,
   "primary-950": $primary-950,
   "secondary-50": $secondary-50,
-  "secondary-100": $secondary100,
+  "secondary-100": $secondary-100,
   "secondary-200": $secondary-200,
   "secondary-300": $secondary-300,
   "secondary-400": $secondary-400,
@@ -473,7 +473,8 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+// $enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -503,18 +504,24 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-$spacers: (
+$spacers: (   
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer * .75,
-  4: $spacer,
-  5: $spacer * 1.5,
-  6: $spacer * 2,
-  7: $spacer * 2.5,
-  8: $spacer * 3,
-  9: $spacer * 3.5,
-  10: $spacer * 4,
+  1:  $spacer * .25,    //4
+  2:  $spacer * .5,     //8
+  3:  $spacer * .75,    //12
+  4:  $spacer,
+  5:  $spacer * 1.25,   //20
+  6:  $spacer * 1.5,    //24
+  7:  $spacer * 1.75,   //28
+  8:  $spacer * 2,      //32
+  9:  $spacer * 2.25,   //36
+  10: $spacer * 2.5,    //40
+  11: $spacer * 2.75,   //44
+  12: $spacer * 3,      //48
+  13: $spacer * 3.25,   //52
+  14: $spacer * 3.5,    //56
+  15: $spacer * 3.75,   //60
+  16: $spacer * 4,      //64
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -536,16 +543,16 @@ $position-values: (
 
 $body-text-align:           null !default;
 // $body-color:                $gray-900 !default;
-$body-color:                $Neutral-950 !default;
+$body-color:                $neutral-950 !default;
 $body-bg:                   $white !default;
 
 // $body-secondary-color:      rgba($body-color, .75) !default;
-$body-secondary-color:      $Neutral-700 !default;
+$body-secondary-color:      $neutral-700 !default;
 // $body-secondary-bg:         $gray-200 !default;
-$body-secondary-bg:         $Neutral-50 !default;
+$body-secondary-bg:         $neutral-50 !default;
 
 // $body-tertiary-color:       rgba($body-color, .5) !default;
-$body-tertiary-color:       $Neutral-400 !default;
+$body-tertiary-color:       $neutral-400 !default;
 // $body-tertiary-bg:          $gray-100 !default;
 $body-tertiary-bg:          $gray-100 !default;
 
@@ -555,8 +562,10 @@ $body-emphasis-color:       $black !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+// $link-color:                              $primary !default;
+$link-color:                              $neutral-950 !default;
+// $link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -577,7 +586,8 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+// $paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default;
 
 
 // Grid breakpoints
@@ -645,7 +655,7 @@ $border-widths: (
 ) !default;
 $border-style:                solid !default;
 // $border-color:                $gray-300 !default;
-$border-color:                $Neutral-200 !default;
+$border-color:                $neutral-200 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -661,7 +671,7 @@ $border-radius-xl:           1.5rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
-$border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3.0
+$border-radius-2xl:           $border-radius-xl !default; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
@@ -735,16 +745,24 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+// $line-height-base:            1.5 !default;
+$line-height-base:            1.2 !default;
+// $line-height-sm:              1.25 !default;
+$line-height-sm:              1 !default;
+$line-height-lg:              1.6 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 1.75 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.25 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.125 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 0.875 !default;
+$h8-font-size:                $font-size-base * 0.75 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -754,12 +772,15 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+// $headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;

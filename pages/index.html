@@ -1,18 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Pet Go</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Pet Go</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="container">
+      <h2 class="pt-3 pb-4 text-center">預定您與寵物的完美旅程</h2>
+      <form action="">
+        <div class="form-container mb-4">
+          <div class="mb-3 input-icon border-bottom">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+            <input type="text" class="form-control lh-lg" placeholder="臺東">
+          </div>
+          <div class="mb-3 input-icon border-bottom">
+            <span class="material-symbols-outlined">
+              calendar_today
+            </span>
+            <input type="date" class="form-control lh-lg" placeholder="7月14日 – 7月16日">
+          </div>
+          <div class="mb-3 input-icon">
+            <span class="material-symbols-outlined">
+              sound_detection_dog_barking
+            </span>
+            <input type="text" class="form-control lh-lg" placeholder="1間房 – 2位成人・1隻寵物">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-search fs-4 fw-bold mb-7">搜尋</button>
+      </form>
+
+
+      <section class="recentView pb-10">
+        <h2 class="mb-4">最近瀏覽</h2>
+        <div class="swiper mySwiper-1 h-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/recent_view_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/recent_view_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/recent_view_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="popularView pb-10">
+        <h2 class="mb-4">探索熱門寵物主題旅店</h2>
+        <div class="swiper mySwiper-2 h-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/popular_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link ">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/popular_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="../assets/images/popular_hotel.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="dogZone pb-10">
+        <h2 class="mb-4">最適宜的環境設施</h2>
+        <div class="row g-2">
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('../assets/images/small_size_dog.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">小型犬</h3>
+                <p class="fs-7">0-9kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('../assets/images/mid_size_dog.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">中型犬</h3>
+                <p class="fs-7">10-23kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('../assets/images/large_size_dog.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">大型犬</h3>
+                <p class="fs-7">14-41kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('../assets/images/xl_size_dog.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">超大型犬</h3>
+                <p class="fs-7">42kg以上</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destination pb-10">
+        <h2 class="mb-4">最chill的目的地</h2>
+        <div class="row gx-4">
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place1.png" alt="南投" class="mb-2">
+                <h4>南投</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place3.png" alt="台東" class="mb-2">
+                <h4>台東</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place2.png" alt="嘉義" class="mb-2">
+                <h4>嘉義</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place4.png" alt="宜蘭" class="mb-2">
+                <h4>宜蘭</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place5.png" alt="苗栗" class="mb-2">
+                <h4>苗栗</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place7.png" alt="屏東" class="mb-2">
+                <h4>屏東</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place6.png" alt="花蓮" class="mb-2">
+                <h4>花蓮</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="../assets/images/chill_place8.png" alt="高雄" class="mb-2">
+                <h4>高雄</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

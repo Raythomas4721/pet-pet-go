@@ -1,16 +1,9 @@
-// swiper
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    padding: 0 10px;
-  }
-  .swiper-pagination {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    color: #343a40;
-  }
+h2 {
+  font-weight: bold;
+}
+
+.bg-base {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
