@@ -300,6 +300,7 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       #fe9839;//$blue !default;
 $secondary:     #fbf9c6;//$gray-600 !default;
+$tertiary:      #8A8A86;
 
 $primary-50: #fff8ed;
 $primary-100: #ffeed4;
@@ -361,6 +362,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":  $tertiary,
 
   "primary-50": $primary-50,
   "primary-100": $primary-100,
@@ -464,7 +466,7 @@ $escaped-characters: (
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
-$enable-shadows:              true;//false !default;
+$enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
@@ -562,7 +564,7 @@ $body-emphasis-color:       $black !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none;//underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -1277,11 +1279,11 @@ $zindex-levels: (
 
 // scss-docs-start nav-variables
 $nav-link-padding-y:                .5rem !default;
-$nav-link-padding-x:                1rem !default;
+$nav-link-padding-x:                0rem;//1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-color:                    $tertiary !default;//var(--#{$prefix}link-color) !default;
+$nav-link-hover-color:              $primary;//var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
 $nav-link-focus-box-shadow:         $focus-ring-box-shadow !default;

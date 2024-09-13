@@ -1,0 +1,9 @@
+.footer {
+    .nav-item > .d-flex {
+        gap: 2px;
+    }
+    .nav-link.active {
+        color: $primary;
+        font-weight: 700;
+    }
+}
