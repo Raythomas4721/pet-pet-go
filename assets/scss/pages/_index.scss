@@ -1,0 +1,35 @@
+.form-container {
+  border: 1px solid map-get($theme-colors, "neutral-200" );
+  border-radius: 12px;
+}
+.form-container .form-control {
+  border: none;
+  padding: 16px;
+  padding-left: 56px;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.form-container .input-icon {
+  position: relative;
+}
+.form-container .input-icon .material-symbols-outlined {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: map-get($theme-colors, "neutral-400" );
+}
+.btn-search {
+  background-color: map-get($theme-colors, "primary-400" );
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+// stretched-link
+
+.dogZone .card {
+  height: 190px;
+}
