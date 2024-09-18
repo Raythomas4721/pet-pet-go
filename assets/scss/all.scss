@@ -5,6 +5,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 @import "./base/base";
+@import "./utils/helpers";
 @import "./utils/google-icons";
 @import './utils/variables';
 
@@ -67,7 +68,6 @@
 @import "./forms/forms";
 
 //layout
-@import "./utils/helpers";
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
