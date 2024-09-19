@@ -1,60 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Pet Go</title>
-    <script type="module" crossorigin src="/pet-pet-go/assets/main-8fb2a326.js"></script>
-    <link rel="stylesheet" href="/pet-pet-go/assets/main-e523073d.css">
-  </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="/pet-pet-go/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Pet Go</title>
+  <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+  <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-615e950f.js"></script>
+  <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-84139cb0.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <div class="navbar pt-6">
+            <h1><a href="#"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
+            <button type="button" class="btn btn-white">
+                <span class="material-symbols-outlined fs-2 text-primary-700">
+                    notifications
+                </span>
+            </button>
+        </div>
     </div>
+</header>    <div class="container">
+      <h2 class="pt-3 pb-4 text-center">預定您與寵物的完美旅程</h2>
+      <form action="">
+        <div class="form-container mb-4">
+          <div class="input-icon border-bottom">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+            <input type="text" class="form-control lh-lg rounded-top-3 shadow-none" data-bs-toggle="offcanvas"
+              data-bs-target="#destinationSelect" aria-controls="destinationSelect" placeholder="臺東">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="destinationSelect"
+              aria-labelledby="destinationSelectLabel">
+              <div class="offcanvas-header d-block mb-4">
+                <div class="dragBar"></div>
+                <h2 class="offcanvas-title text-center pt-4 pb-4" id="destinationSelectLabel">尋找目的地</h2>
+              </div>
+              <div class="offcanvas-body">
+                <div class="container">
+                  <!-- Search Box -->
+                  <div class="input-icon border rounded-3">
+                    <span class="material-symbols-outlined">
+                      search
+                    </span>
+                    <input type="text" class="form-control lh-lg rounded-3 shadow-none" placeholder="臺東">
+                  </div>
+                  <!-- Search History -->
+                  <div class="search-history">
+                    <h7 class="fw-bold fs-7 d-block pt-4 pb-4">搜尋紀錄</h7>
+                    <div class="search-item pt-2 pb-2 border-bottom">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <div class="ps-9 ">
+                        <a class="fs-7 d-block stretched-link" href="#">桔達大賣店</a>
+                        <small class="fs-8 text-neutral-400">台南市光榮路689號</small>
+                      </div>
+                    </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+                    <div class="search-item pt-2 pb-2 position-relative border-bottom">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <div class="ps-9 ">
+                        <a class="fs-7 d-block stretched-link" href="#">台南市</a>
+                        <small class="fs-8 text-neutral-400">27關廟物友路整區</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Popular Place -->
+                  <div class="popular-place">
+                    <h7 class="fw-bold d-block fs-7 pt-4 pb-4">最熱門</h7>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="search-item pt-2 pb-2 position-relative border-bottom">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <div class="ps-9 ">
+                        <a class="fs-7 d-block stretched-link" href="#">桔達大賣店</a>
+                        <small class="fs-8 text-neutral-400">台南市光榮路689號</small>
+                      </div>
+                    </div>
+
+                    <div class="search-item pt-2 pb-2 position-relative border-bottom">
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <div class="ps-9 ">
+                        <a class="fs-7 d-block stretched-link" href="#">台南市</a>
+                        <small class="fs-8 text-neutral-400">27關廟物友路整區</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="input-icon border-bottom">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <input type="text" id="dateRange" class="form-control lh-lg shadow-none" placeholder="7月14日 – 7月16日"
+              data-bs-toggle="offcanvas" data-bs-target="#datePickerOffcanvas" aria-controls="datePickerOffcanvas">
+          </div>
+          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="datePickerOffcanvas"
+            aria-labelledby="datePickerOffcanvasLabel">
+            <div class="offcanvas-header d-block">
+              <div class="dragBar"></div>
+            </div>
+            <div class="offcanvas-body">
+              <div id="datepicker"></div>
+              <div id="datepicker-next-month"></div>
+              <p class="mt-3">入住日期：<strong id="selectedDates"></strong></p>
+              <button class="w-100 btn btn-primary mt-3" id="confirmDates">選擇日期 (2晚)</button>
+            </div>
+          </div>
+          <div class="input-icon">
+            <span class="material-symbols-outlined">
+              sound_detection_dog_barking
+            </span>
+            <input type="text" class="form-control lh-lg rounded-bottom-3 shadow-none" data-bs-toggle="offcanvas"
+            data-bs-target="#peopleCount" aria-controls="peopleCount"  placeholder="1間房 – 2位成人・1隻寵物">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="peopleCount"
+              aria-labelledby="destinationSelectLabel">
+              <div class="offcanvas-header d-block mb-4">
+                <div class="dragBar"></div>
+                <h2 class="offcanvas-title text-center pt-4 pb-4" id="peopleCountLabel">選擇客房與住客數量</h2>
+              </div>
+              <div class="offcanvas-body">
+                <div class="container">
+                  <div class="peopleDisplay">
+                    <div class="display-item pt-2 pb-2 border-bottom">
+                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                        <p class="fs-6">客房</p>
+                        <div class="countingBox">
+                          <a href="#" class="count-btn">-</a>
+                          1
+                          <a href="#" class="count-btn">+</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="display-item pt-2 pb-2 border-bottom">
+                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                        <p class="fs-6">成人</p>
+                        <div class="countingBox">
+                          <a href="#" class="count-btn">-</a>
+                          2
+                          <a href="#" class="count-btn">+</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="display-item pt-2 pb-2 border-bottom">
+                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                        <p class="fs-6">孩童</p>
+                        <div class="countingBox">
+                          <a href="#" class="count-btn">-</a>
+                          0
+                          <a href="#" class="count-btn">+</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="display-item pt-2 pb-2 border-bottom">
+                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                        <p class="fs-6">寵物</p>
+                        <div class="countingBox">
+                          <a href="#" class="count-btn">-</a>
+                          1
+                          <a href="#" class="count-btn">+</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="w-100 btn btn-primary mt-3" id="confirmPeopleCount">確定</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <button type="submit" class="btn btn-primary btn-search fs-4 fw-bold mb-7 mt-3">搜尋</button>
+      </form>
+
+
+      <section class="recentView pb-10">
+        <h2 class="mb-4">最近瀏覽</h2>
+        <div class="swiper mySwiper-1 h-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/recent_view_hotel-82496d47.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/recent_view_hotel-82496d47.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/recent_view_hotel-82496d47.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-1">
+                    <a href="#">
+                      <h4 class="stretched-link">台南大飯店</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <span class="text-neutral-400 fs-8">7月12日 - 7月14日</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="popularView pb-10">
+        <h2 class="mb-4">探索熱門寵物主題旅店</h2>
+        <div class="swiper mySwiper-2 h-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/popular_hotel-e5fcdea3.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link ">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/popular_hotel-e5fcdea3.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="/pet-pet-go/assets/popular_hotel-e5fcdea3.png" class="card-img-top mb-2" alt="hotel">
+                <div class="card-body p-0 ">
+                  <div class="card-title d-flex justify-content-between mb-0">
+                    <a href="#">
+                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                    </a>
+                    <p class="d-flex align-items-center fs-7">
+                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                        pet_supplies
+                      </span>
+                      4.7&nbsp;
+                      <span class="text-neutral-400"> (51)</span>
+                    </p>
+                  </div>
+                  <div class="mb-1">
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                  </div>
+                  <p class="fs-5 fw-bold">
+                    <span class="text-neutral-400 fs-7">
+                      每晚最低
+                    </span>
+                    TWD 6,000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="dogZone pb-10">
+        <h2 class="mb-4">最適宜的環境設施</h2>
+        <div class="row g-2">
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('/pet-pet-go/assets/small_size_dog-dd010bc1.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">小型犬</h3>
+                <p class="fs-7">0-9kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('/pet-pet-go/assets/mid_size_dog-5318fb00.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">中型犬</h3>
+                <p class="fs-7">10-23kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('/pet-pet-go/assets/large_size_dog-c084b718.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">大型犬</h3>
+                <p class="fs-7">14-41kg</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card bg-base text-center justify-content-center"
+              style="background-image: url('/pet-pet-go/assets/xl_size_dog-4926de68.png');">
+              <a href="#" class="text-white stretched-link">
+                <h3 class="pb-2">超大型犬</h3>
+                <p class="fs-7">42kg以上</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destination pb-10">
+        <h2 class="mb-4">最chill的目的地</h2>
+        <div class="row gx-4">
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place1-319bd57f.png" alt="南投" class="mb-2">
+                <h4>南投</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place3-b52cd2bb.png" alt="台東" class="mb-2">
+                <h4>台東</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place2-fb30d0a1.png" alt="嘉義" class="mb-2">
+                <h4>嘉義</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place4-3c2cf896.png" alt="宜蘭" class="mb-2">
+                <h4>宜蘭</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place5-99e86865.png" alt="苗栗" class="mb-2">
+                <h4>苗栗</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place7-55a7db34.png" alt="屏東" class="mb-2">
+                <h4>屏東</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place6-24f4b470.png" alt="花蓮" class="mb-2">
+                <h4>花蓮</h4>
+              </div>
+              <div class="card border-0 mb-5">
+                <img src="/pet-pet-go/assets/chill_place8-5f67be5c.png" alt="高雄" class="mb-2">
+                <h4>高雄</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <footer class="footer">我是 footer</footer>
-    
-  </body>
+    <footer class="footer container">
+    <ul class="nav justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link d-flex flex-column align-items-center active" aria-current="page" href="#">
+            <span class="material-symbols-outlined">search</span>
+            <small>搜尋</small>
+          </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                <span class="material-symbols-outlined">pets</span>
+                <small>收藏</small>
+            </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                <span class="material-symbols-outlined fill-1">hotel</span>
+                <small>訂單</small>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                <span class="material-symbols-outlined fill-1">send</span>
+                <small>訊息</small>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+                <span class="material-symbols-outlined fill-1">account_circle</span>
+                <small>個人</small>
+            </a>
+        </li>
+    </ul>
+</footer>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+        $(function () {
+          // 初始化 Datepicker
+          $("#datepicker").datepicker({
+            numberOfMonths: 1,
+            showButtonPanel: false,
+            onSelect: function (dateText) {
+              var selectedDate = $(this).datepicker("getDate");
+              var dateFormat = $.datepicker.formatDate('mm/dd', selectedDate);
+
+              // 將選擇的日期顯示在下方
+              if (!$("#selectedDates").text()) {
+                $("#selectedDates").text(dateFormat);
+                $("#dateRange").val(dateFormat);
+              } else {
+                var existingDates = $("#selectedDates").text().split('→');
+                if (existingDates.length === 1) {
+                  // 設置退房日期
+                  $("#selectedDates").text(existingDates[0] + ' → ' + dateFormat);
+                  $("#dateRange").val(existingDates[0] + ' → ' + dateFormat);
+                }
+              }
+            }
+          });
+
+          // 初始化下一個月份的 Datepicker
+          $("#datepicker-next-month").datepicker({
+            numberOfMonths: 1,
+            showButtonPanel: false,
+            defaultDate: "+1m", // 顯示下一個月份
+            onSelect: function (dateText) {
+              var selectedDate = $(this).datepicker("getDate");
+              var dateFormat = $.datepicker.formatDate('mm/dd', selectedDate);
+              $("#dateRange").val(dateFormat);
+
+              // 將選擇的日期顯示在下方
+              if (!$("#selectedDates").text()) {
+                $("#selectedDates").text(dateFormat);
+                $("#dateRange").val(dateFormat);
+              } else {
+                var existingDates = $("#selectedDates").text().split('→');
+                if (existingDates.length === 1) {
+                  // 設置退房日期
+                  $("#selectedDates").text(existingDates[0] + ' → ' + dateFormat);
+                  $("#dateRange").val(existingDates[0] + ' → ' + dateFormat);
+                }
+              }
+            }
+            
+          });
+        });
+      </script>
+</body>
+
 </html>
