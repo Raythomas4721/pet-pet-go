@@ -4,9 +4,9 @@
 
 @import "../../node_modules/bootstrap/scss/functions";
 
-@import "./base/base";
 @import "./utils/google-icons";
 @import './utils/variables';
+
 
 // @import "../../node_modules/bootstrap";  //★原載入全部檔案
 //==5.3版start==
@@ -62,9 +62,13 @@
 
 //==Custom start==
 
+//base
+@import "./base/base";
+
 //components
 @import "./components/buttons";
 @import "./components/navs";
+@import "./components/swiper";
 
 @import "./forms/forms";
 
@@ -75,3 +79,4 @@
 
 //pages
 @import './pages/index.scss';
+@import './pages/search';
