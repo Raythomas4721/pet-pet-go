@@ -1,3 +1,94 @@
-.index-title {
-  font-size: 100px;
+.form-container {
+  border: 1px solid map-get($theme-colors, "neutral-200");
+  border-radius: 12px;
+}
+.form-container .form-control {
+  border: none;
+  padding: 16px;
+  padding-left: 56px;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.input-icon {
+  position: relative;
+}
+.input-icon .material-symbols-outlined {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: map-get($theme-colors, "neutral-400");
+}
+.btn-search {
+  background-color: map-get($theme-colors, "primary-400");
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+// stretched-link
+
+.dogZone .card {
+  height: 190px;
+}
+
+.offcanvas {
+  --bs-offcanvas-height: 65vh;
+}
+
+.search-item {
+  position: relative;
+}
+
+.search-item .material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: map-get($theme-colors, "neutral-700");
+}
+
+.ui-datepicker {
+  width: 100% !important;
+}
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 間距 */
+}
+
+.countingBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  .count-btn {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  .count-btn::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    z-index: -1; 
+  }
+  
+  .count-btn:hover::before {
+    background-color: #e0e0e0;
+  }
+  
 }
