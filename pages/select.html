@@ -1,16 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>select</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>選擇客房</h1>
-    <%- include('./layout/footer'); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>選擇客房 | PetPetGo</title>
+</head>
+
+<body>
+  <div class="container pt-6 pb-4">
+    <div class="d-flex align-items-center pt-5 pb-5">
+      <input class="material-symbols-outlined bg-white p-0 border-0 me-3" type="button" onclick="history.back()"
+        value="arrow_back_ios">
+      <h4 class="lh-lg">選擇客房</h4>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="../assets/images/select_page/select-1.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/bed-icon.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/brush-icon.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="../assets/images/select_page/icons/dog-icon.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="../assets/images/select_page/select-2.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/bed-icon.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/brush-icon.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="../assets/images/select_page/icons/dog-icon.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="../assets/images/select_page/select-3.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/bed-icon.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="../assets/images/select_page/icons/brush-icon.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="../assets/images/select_page/icons/dog-icon.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+  <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-  </body>
+</body>
+
 </html>
