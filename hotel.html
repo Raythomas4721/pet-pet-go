@@ -1,30 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel</title>
-    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-615e950f.js"></script>
-    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-84139cb0.css">
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-a4252699.js"></script>
+  <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-c3f288a9.css">
+</head>
+<body>
+  <header>
     <div class="container">
         <div class="navbar pt-6">
             <h1><a href="#"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
-            <button type="button" class="btn btn-white">
+            <a href="#" class="bg-btn-rounded">
                 <span class="material-symbols-outlined fs-2 text-primary-700">
                     notifications
                 </span>
-            </button>
+            </a>
         </div>
     </div>
-</header>    <h1>旅館主頁</h1>
-    <footer class="footer container">
-    <ul class="nav justify-content-between">
+</header>
+  <div class="container py-5">
+    <div class="d-flex gap-6">
+      <input class="material-symbols-outlined bg-white p-0 border-0 me-auto" type ="button" onclick="history.back()" value="arrow_back_ios">
+      <span class="material-symbols-outlined fill-1 text-accent">share</span>
+      <a href="#">
+        <img src="/pet-pet-go/assets/Property 1_button-collect-7abfa32f.svg" alt="collect">
+      </a>
+    </div>
+  </div>
+  <div class="swiper card-img-Swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="w-100 object-fit-cover" style="height: 200px;" src="/pet-pet-go/assets/Fixed-aspect-ratio-spacer (4)-753afa9f.jpg" alt="Hotel-1">
+      </div>
+      <div class="swiper-slide">
+        <img class="w-100 object-fit-cover" style="height: 200px;" src="/pet-pet-go/assets/Fixed-aspect-ratio-spacer (1)-3c03588e.jpg" alt="Hotel-1">
+      </div>
+      <div class="swiper-slide">
+        <img class="w-100 object-fit-cover" style="height: 200px;" src="/pet-pet-go/assets/Fixed-aspect-ratio-spacer (2)-7afba12b.jpg" alt="Hotel-1">
+      </div>
+      <div class="swiper-slide">
+        <img class="w-100 object-fit-cover" style="height: 200px;" src="/pet-pet-go/assets/Fixed-aspect-ratio-spacer (3)-5cc61aac.jpg" alt="Hotel-1">
+      </div>
+      <div class="swiper-slide">
+        <img class="w-100 object-fit-cover" style="height: 200px;" src="/pet-pet-go/assets/Fixed-aspect-ratio-spacer (4)-753afa9f.jpg" alt="Hotel-1">
+      </div>
+    </div>
+    <div class="swiper-pagination position-absolute" style="left: 14px;top: calc(100% - 38px);"></div>
+  </div>
+  <div class="container">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <h2 class="text-neutral-950 mb-2">台東毛爸綠島包棟民宿</h2>
+        <div class="mb-3">
+          <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal py-1 px-2">免費取消</span>
+          <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal py-1 px-2">免費早餐</span>
+          <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal py-1 px-2">草地跑跑</span>
+        </div>
+        <div class="d-flex gap-1 justify-content-between align-items-center mb-3">
+          <div class="text-primary d-flex align-items-center">
+            <span class="material-symbols-outlined fill-1">pet_supplies</span>
+            <span class="material-symbols-outlined fill-1">pet_supplies</span>
+            <span class="material-symbols-outlined fill-1">pet_supplies</span>
+            <span class="material-symbols-outlined fill-1">pet_supplies</span>
+            <img src="/pet-pet-go/assets/Property 1_score-half-73e1e7f9.svg" alt="score-half">
+            <span class="text-neutral-950">4.7</span>
+          </div>
+          <a class="fs-8" style="text-decoration: underline;" href="#">查看560則評論<span class=""></span></a>
+        </div>
+        <div class="swiper commentSwiper comment">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="card">
+                <div class="card-body d-flex flex-column justify-content-between p-2">
+                  <p class="card-text multiline-ellipsis fs-8 lh-lg">我和我的毛小孩最近入住了這家民宿，整體經驗非常愉快，強烈推薦給所有寵物主人。</p>
+                  <div class="d-flex gap-1 text-tertiary lh-lg" style="font-size: 10px;">
+                    <span class="card-text">meg young</span>
+                    <div class="vr border-neutral-200"></div>
+                    <span class="card-text">台中</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="card">
+                <div class="card-body d-flex flex-column justify-content-between p-2">
+                  <p class="card-text multiline-ellipsis fs-8 lh-lg">地點超級方便，離活車站超近，附近還有很多景點可以逛，空間乾淨整潔，下次一定會再來住！</p>
+                  <div class="d-flex gap-1 text-tertiary lh-lg" style="font-size: 10px;">
+                    <span class="card-text">ning tsao</span>
+                    <div class="vr border-neutral-200"></div>
+                    <span class="card-text">台南</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </li>
+      <li class="list-group-item">
+        <ul class="row row-cols-2 gy-3">
+          <li class="col">
+            <div class="d-flex flex-column gap-1">
+              <span class="fs-8 fw-medium">入住日期</span>
+              <small class="text-accent fw-bold">7月14日 週日</small>
+            </div>
+          </li>
+          <li class="col">
+            <div class="d-flex flex-column gap-1">
+              <span class="fs-8 fw-medium">退房日期</span>
+              <small class="text-accent fw-bold">7月16日 週二</small>
+            </div>
+          </li>
+          <li class="col">
+            <div class="d-flex flex-column gap-1">
+              <span class="fs-8 fw-medium">住客人數與寵物</span>
+              <small class="text-accent fw-bold">2位成人、1隻寵物</small>
+            </div>
+          </li>
+        </ul>
+
+      </li>
+      <li class="list-group-item d-flex flex-column gap-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29455.121879509952!2d121.46264807935769!3d22.657880783566213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346f8de819af9923%3A0x27c51382da3649c3!2z57ag5bO25q-b5LmL5a625rCR5a6_!5e0!3m2!1szh-TW!2stw!4v1726648696089!5m2!1szh-TW!2stw"
+          width="100%" 
+          height="142" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        <div class="d-flex gap-1 align-items-center">
+          <span class="material-symbols-outlined" style="font-size: 18px;">location_on</span>
+          <span class="fs-8">地址：台東縣綠島鄉漁港136號951</span>
+        </div>
+        <div class="d-flex gap-1 align-items-center">
+          <span class="material-symbols-outlined" style="font-size: 18px;">location_on</span>
+          <span class="fs-8">距市中心300公尺</span>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="text-neutral-950 fw-bold">寵物入住規定與設施設備</h3>
+          <a class="small text-neutral-950" style="text-decoration: underline;" href="#">查看全部</a>
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">寵物額外收取$500TWD清潔費</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">提供寵物備品</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">旅館附有寵物玩耍草地</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">勿將寵物單獨滯留房內</span>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="text-neutral-950 fw-bold">旅店設施與設備</h3>
+          <a class="small text-neutral-950" style="text-decoration: underline;" href="#">查看全部</a>
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">免費Wi-Fi</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">免費租借腳踏車</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">附早餐</span>
+          </div>
+          <div class="d-flex gap-1 align-items-center">
+            <span class="material-symbols-outlined" style="font-size: 18px;">check</span>
+            <span class="small">可寄放行李</span>
+          </div>
+        </div>
+      </li>
+      <div class="accordion accordion-flush" id="accordionPanelsStayOpen">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed fw-bold" style="font-size:large;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+              旅店介紹
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed fw-bold" style="font-size:large;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              住宿規定
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed fw-bold" style="font-size:large;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              周邊寵物友善景點
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed fw-bold" style="font-size:large;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              聯絡旅店
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+  <div class="fixed-bottom bg-white">
+    <div class="container">
+      <div class="row row-cols-2 align-items-center" style="--bs-gutter-x: 0rem;height: 70px;">
+        <div class="col">
+          <div class="d-flex flex-column">
+            <span class="small text-tertiary">每晚最低</span>
+            <span class="fs-3 fw-bold text-neutral-950" style="letter-spacing: 0.1px;">TWD 6,000</span>
+          </div>
+        </div>
+        <a class="col" href="select.html">
+          <button class="btn btn-primary w-100 fs-7 fw-bold lh-lg rounded-1" type="button">選擇客房</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer container fixed-bottom bg-white">
+    <ul class="nav justify-content-between pb-4">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center active" aria-current="page" href="#">
+          <a class="nav-link d-flex flex-column align-items-center" href="../pages/search.html">
             <span class="material-symbols-outlined">search</span>
             <small>搜尋</small>
           </a>
@@ -36,13 +272,13 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/order.html">
                 <span class="material-symbols-outlined fill-1">hotel</span>
                 <small>訂單</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/information.html">
                 <span class="material-symbols-outlined fill-1">send</span>
                 <small>訊息</small>
             </a>
@@ -55,7 +291,8 @@
         </li>
     </ul>
 </footer>
+  <div style="height: 70px;"></div>
 
-    
-  </body>
+  
+</body>
 </html>

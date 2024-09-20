@@ -1,30 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>select</title>
-    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-615e950f.js"></script>
-    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-84139cb0.css">
-  </head>
-  <body>
-    <header>
-    <div class="container">
-        <div class="navbar pt-6">
-            <h1><a href="#"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
-            <button type="button" class="btn btn-white">
-                <span class="material-symbols-outlined fs-2 text-primary-700">
-                    notifications
-                </span>
-            </button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>選擇客房 | PetPetGo</title>
+  <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-a4252699.js"></script>
+  <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-c3f288a9.css">
+</head>
+
+<body>
+  <div class="container pt-6 pb-4">
+    <div class="d-flex align-items-center pt-5 pb-5">
+      <input class="material-symbols-outlined bg-white p-0 border-0 me-3" type="button" onclick="history.back()"
+        value="arrow_back_ios">
+      <h4 class="lh-lg">選擇客房</h4>
     </div>
-</header>    <h1>選擇客房</h1>
-    <footer class="footer container">
-    <ul class="nav justify-content-between">
+  </div>
+  <div class="container">
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="/pet-pet-go/assets/select-1-a4432277.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/bed-icon-f40face1.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/brush-icon-e63e14f6.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="/pet-pet-go/assets/dog-icon-6306bef9.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="/pet-pet-go/assets/select-2-199f2e29.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/bed-icon-f40face1.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/brush-icon-e63e14f6.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="/pet-pet-go/assets/dog-icon-6306bef9.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="mb-12">
+      <div class="card border-0">
+        <img src="/pet-pet-go/assets/select-3-10200e24.jpg" class="card-img-top mb-2" alt="hotel">
+        <div class="card-body p-0 ">
+          <div class="card-title d-flex justify-content-between align-items-center mb-3">
+            <a href="#" class=" stretched-link">
+              <h4 class="mb-1">豪華寵物雙人套房</h4>
+            </a>
+            <a href="#" class="fs-8 lh-lg border-bottom border-neutral-950">房型說明</a>
+          </div>
+          <div class="mb-3 text-neutral-700 fs-7 lh-lg">
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/bed-icon-f40face1.svg"
+                class="me-1" alt="bed-icon" width="16" height="16"> 1張雙人床</p>
+            <p class="d-flex align-items-center mb-2"><img src="/pet-pet-go/assets/brush-icon-e63e14f6.svg"
+                class="me-1" alt="brush-icon" width="16" height="16"> 寵物額外收取 500TWD清潔費</p>
+            <p class="d-flex align-items-center"><img src="/pet-pet-go/assets/dog-icon-6306bef9.svg" class="me-1"
+                alt="dog-icon" width="16" height="16"> 最多可攜帶2隻8公斤以下小型犬入住</p>
+          </div>
+          <div class="mb-2">
+            <p class="fs-5 fw-bold">
+              TWD 8,500
+            </p>
+            <p class="fs-8 text-neutral-700 fw-medium lh-lg">2晚房價(7月14－16日) </p>
+            <span class="text-neutral-400 fs-8 lh-lg">
+              含稅與其他費用
+            </span>
+          </div>
+        </div>
+      </div>
+      <select class="form-select form-select-lg mb-3 text-center fs-6 lh-lg" aria-label="num select">
+        <option selected>選擇</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+  </div>
+  <footer class="footer container fixed-bottom bg-white">
+    <ul class="nav justify-content-between pb-4">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center active" aria-current="page" href="#">
+          <a class="nav-link d-flex flex-column align-items-center" href="../pages/search.html">
             <span class="material-symbols-outlined">search</span>
             <small>搜尋</small>
           </a>
@@ -36,13 +143,13 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/order.html">
                 <span class="material-symbols-outlined fill-1">hotel</span>
                 <small>訂單</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/information.html">
                 <span class="material-symbols-outlined fill-1">send</span>
                 <small>訊息</small>
             </a>
@@ -57,5 +164,6 @@
 </footer>
 
     
-  </body>
+</body>
+
 </html>

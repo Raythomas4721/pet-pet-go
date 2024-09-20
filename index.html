@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Pet Go</title>
   <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
-  <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-615e950f.js"></script>
-  <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-84139cb0.css">
+  <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-a4252699.js"></script>
+  <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-c3f288a9.css">
 </head>
 
 <body>
@@ -16,11 +16,11 @@
     <div class="container">
         <div class="navbar pt-6">
             <h1><a href="#"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
-            <button type="button" class="btn btn-white">
+            <a href="#" class="bg-btn-rounded">
                 <span class="material-symbols-outlined fs-2 text-primary-700">
                     notifications
                 </span>
-            </button>
+            </a>
         </div>
     </div>
 </header>    <div class="container">
@@ -28,7 +28,7 @@
       <form action="">
         <div class="form-container mb-4">
           <div class="input-icon border-bottom">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined lh-lg">
               search
             </span>
             <input type="text" class="form-control lh-lg rounded-top-3 shadow-none" data-bs-toggle="offcanvas"
@@ -46,10 +46,10 @@
                     <span class="material-symbols-outlined">
                       search
                     </span>
-                    <input type="text" class="form-control lh-lg rounded-3 shadow-none" placeholder="臺東">
+                    <input type="text" class="form-control lh-lg rounded-3 shadow-none lh-lg" placeholder="臺東">
                   </div>
                   <!-- Search History -->
-                  <div class="search-history">
+                  <div class="search-history lh-lg">
                     <h7 class="fw-bold fs-7 d-block pt-4 pb-4">搜尋紀錄</h7>
                     <div class="search-item pt-2 pb-2 border-bottom">
                       <span class="material-symbols-outlined">
@@ -72,7 +72,7 @@
                     </div>
                   </div>
                   <!-- Popular Place -->
-                  <div class="popular-place">
+                  <div class="popular-place lh-lg">
                     <h7 class="fw-bold d-block fs-7 pt-4 pb-4">最熱門</h7>
 
                     <div class="search-item pt-2 pb-2 position-relative border-bottom">
@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="input-icon border-bottom">
-            <span class="material-symbols-outlined">calendar_today</span>
+            <span class="material-symbols-outlined lh-lg">calendar_today</span>
             <input type="text" id="dateRange" class="form-control lh-lg shadow-none" placeholder="7月14日 – 7月16日"
               data-bs-toggle="offcanvas" data-bs-target="#datePickerOffcanvas" aria-controls="datePickerOffcanvas">
           </div>
@@ -117,7 +117,7 @@
             </div>
           </div>
           <div class="input-icon">
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined lh-lg">
               sound_detection_dog_barking
             </span>
             <input type="text" class="form-control lh-lg rounded-bottom-3 shadow-none" data-bs-toggle="offcanvas"
@@ -126,11 +126,11 @@
               aria-labelledby="destinationSelectLabel">
               <div class="offcanvas-header d-block mb-4">
                 <div class="dragBar"></div>
-                <h2 class="offcanvas-title text-center pt-4 pb-4" id="peopleCountLabel">選擇客房與住客數量</h2>
+                <h2 class="offcanvas-title text-center pt-4 pb-4 fw-bold" id="peopleCountLabel">選擇客房與住客數量</h2>
               </div>
               <div class="offcanvas-body">
                 <div class="container">
-                  <div class="peopleDisplay">
+                  <div class="peopleDisplay lh-lg">
                     <div class="display-item pt-2 pb-2 border-bottom">
                       <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
                         <p class="fs-6">客房</p>
@@ -195,7 +195,7 @@
                       <h4 class="stretched-link">台南大飯店</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                      <span class="material-symbols-outlined fill-1 text-primary-400 me-1 fs-6 ">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -215,7 +215,7 @@
                       <h4 class="stretched-link">台南大飯店</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                      <span class="material-symbols-outlined fill-1 text-primary-400 me-1 fs-6">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -235,7 +235,7 @@
                       <h4 class="stretched-link">台南大飯店</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6">
+                      <span class="material-symbols-outlined  fill-1 text-primary-400 me-1 fs-6">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -260,10 +260,10 @@
                 <div class="card-body p-0 ">
                   <div class="card-title d-flex justify-content-between mb-0">
                     <a href="#">
-                      <h3 class="mb-1 stretched-link ">毛孩派對房</h4>
+                      <h4 class="mb-1 stretched-link ">毛孩派對房</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                      <span class="material-symbols-outlined fill-1 text-primary-400 me-1 fs-6 ">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -271,8 +271,8 @@
                     </p>
                   </div>
                   <div class="mb-1">
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
                   </div>
                   <p class="fs-5 fw-bold">
                     <span class="text-neutral-400 fs-7">
@@ -289,10 +289,10 @@
                 <div class="card-body p-0 ">
                   <div class="card-title d-flex justify-content-between mb-0">
                     <a href="#">
-                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                      <h4 class="mb-1 stretched-link">毛孩派對房</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                      <span class="material-symbols-outlined fill-1 text-primary-400 me-1 fs-6 ">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -300,8 +300,8 @@
                     </p>
                   </div>
                   <div class="mb-1">
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
                   </div>
                   <p class="fs-5 fw-bold">
                     <span class="text-neutral-400 fs-7">
@@ -318,10 +318,10 @@
                 <div class="card-body p-0 ">
                   <div class="card-title d-flex justify-content-between mb-0">
                     <a href="#">
-                      <h3 class="mb-1 stretched-link">毛孩派對房</h4>
+                      <h4 class="mb-1 stretched-link">毛孩派對房</h4>
                     </a>
                     <p class="d-flex align-items-center fs-7">
-                      <span class="material-symbols-outlined text-primary-400 me-1 fs-6 ">
+                      <span class="material-symbols-outlined fill-1 text-primary-400 me-1 fs-6 ">
                         pet_supplies
                       </span>
                       4.7&nbsp;
@@ -329,8 +329,8 @@
                     </p>
                   </div>
                   <div class="mb-1">
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
-                    <span class="badge bg-secondary-100 text-neutral-700 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
+                    <span class="badge bg-secondary-100 text-neutral-700 p-1 ps-2 pe-2 fs-8 lh-lg fw-normal">草原跑跑</span>
                   </div>
                   <p class="fs-5 fw-bold">
                     <span class="text-neutral-400 fs-7">
@@ -386,7 +386,7 @@
           </div>
         </div>
       </section>
-      <section class="destination pb-10">
+      <section class="destination pb-16">
         <h2 class="mb-4">最chill的目的地</h2>
         <div class="row gx-4">
           <div class="col-6">
@@ -413,7 +413,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 mb-15">
             <div class="d-flex flex-column">
               <div class="card border-0 mb-5">
                 <img src="/pet-pet-go/assets/chill_place5-99e86865.png" alt="苗栗" class="mb-2">
@@ -425,7 +425,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 mb-15">
             <div class="d-flex flex-column">
               <div class="card border-0 mb-5">
                 <img src="/pet-pet-go/assets/chill_place6-24f4b470.png" alt="花蓮" class="mb-2">
@@ -441,10 +441,10 @@
       </section>
     </div>
 
-    <footer class="footer container">
-    <ul class="nav justify-content-between">
+    <footer class="footer container fixed-bottom bg-white">
+    <ul class="nav justify-content-between pb-4">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center active" aria-current="page" href="#">
+          <a class="nav-link d-flex flex-column align-items-center" href="../pages/search.html">
             <span class="material-symbols-outlined">search</span>
             <small>搜尋</small>
           </a>
@@ -456,13 +456,13 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/order.html">
                 <span class="material-symbols-outlined fill-1">hotel</span>
                 <small>訂單</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center" href="../pages/information.html">
                 <span class="material-symbols-outlined fill-1">send</span>
                 <small>訊息</small>
             </a>
