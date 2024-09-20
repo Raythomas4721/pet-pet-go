@@ -25,3 +25,8 @@ var swiper3 = new Swiper(".card-img-Swiper", {
     type: "fraction",
   },
 });
+
+var swiper1 = new Swiper(".commentSwiper", {
+  width: 210,
+  spaceBetween: 12,
+});

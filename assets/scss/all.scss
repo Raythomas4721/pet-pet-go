@@ -65,6 +65,9 @@
 //base
 @import "./base/base";
 
+//utils
+@import "./utils/multiline-ellipsis";
+
 //components
 @import "./components/buttons";
 @import "./components/navs";
@@ -78,5 +81,6 @@
 @import './layout/footer.scss';
 
 //pages
+@import './pages/hotel';
 @import './pages/index.scss';
 @import './pages/search';
