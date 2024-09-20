@@ -1,23 +1,38 @@
-// swiper
-.swiper {
-  width: 100%;
-  height: 100%;
+// background setup
+.bg-base {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.swiper-slide {
-  padding: 0;
-}
-.swiper-pagination {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  color: #343a40;
-}
-
+// 拉狀的bar
 .dragBar {
   height: 2px;
   width: 64px;
   background-color: #949494;
   margin: 6px auto;
+}
+
+// span 背後圓圈 44px
+.bg-btn-rounded {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1;
+}
+.bg-btn-rounded::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+.bg-btn-rounded:hover::before {
+  background-color: #e0e0e0;
 }

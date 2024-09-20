@@ -18,3 +18,15 @@ var swiper2 = new Swiper(".mySwiper-2", {
   slidesPerView: 1.3,
 });
 
+var swiper3 = new Swiper(".card-img-Swiper", {
+  modules: [Navigation, Pagination],
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
+
+var swiper1 = new Swiper(".commentSwiper", {
+  width: 210,
+  spaceBetween: 12,
+});
