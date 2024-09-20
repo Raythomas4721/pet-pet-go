@@ -1,3 +1,4 @@
+// home-form
 .form-container {
   border: 1px solid map-get($theme-colors, "neutral-200");
   border-radius: 12px;
@@ -10,6 +11,7 @@
     box-shadow: none;
   }
 }
+// home-form-icon
 .input-icon {
   position: relative;
 }
@@ -27,21 +29,13 @@
   width: 100%;
   border-radius: 12px;
 }
-
-// stretched-link
-
-.dogZone .card {
-  height: 190px;
-}
-
+// home-form-offcanvas-part
 .offcanvas {
   --bs-offcanvas-height: 65vh;
 }
-
 .search-item {
   position: relative;
 }
-
 .search-item .material-symbols-outlined {
   position: absolute;
   top: 50%;
@@ -49,16 +43,16 @@
   transform: translateY(-50%);
   color: map-get($theme-colors, "neutral-700");
 }
-
+// datepicker
 .ui-datepicker {
-  width: 100% !important;
+  width: 100%;
 }
 .calendar-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 間距 */
+  gap: 20px; 
 }
-
+// people counting
 .countingBox {
   display: flex;
   justify-content: space-between;
@@ -76,7 +70,6 @@
     text-decoration: none;
     font-weight: normal;
   }
-  
   .count-btn::before {
     content: '';
     position: absolute;
@@ -86,9 +79,21 @@
     background-color: #f1f1f1;
     z-index: -1; 
   }
-  
   .count-btn:hover::before {
     background-color: #e0e0e0;
   }
-  
+}
+
+// 適宜的環境設施
+.dogZone .card {
+  height: 190px;
+}
+
+
+
+@media (min-width: 430px) {
+  body,.footer {
+    max-width: 430px;
+    margin: 0 auto;
+  }
 }
