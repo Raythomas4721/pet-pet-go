@@ -1,0 +1,13 @@
+.comment {
+    .card {
+        width: 210px;
+        height: 76px;
+        border-width: 0.5px;
+        border-radius: 4px;
+        border-color: $neutral-200;
+    }
+    span {
+        font-size: 10px;
+        letter-spacing: 0.25px;
+    }
+}

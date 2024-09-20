@@ -349,7 +349,7 @@ $notice-700: #386530;
 $notice-800: #2f512a;
 $notice-900: #284324;
 $notice-950: #11240f;
-
+$accent:        $primary-700; //custom
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -362,7 +362,8 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "tertiary":  $tertiary,
+  "tertiary":   $tertiary,
+  "accent":     $accent,
 
   "primary-50": $primary-50,
   "primary-100": $primary-100,
@@ -634,7 +635,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           2rem;//1.5rem !default;
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -769,14 +770,14 @@ $h8-font-size:                $font-size-base * 0.75 !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  7: $h7-font-size,
-  8: $h8-font-size,
+  1: $h1-font-size,   //28px
+  2: $h2-font-size,   //24px
+  3: $h3-font-size,   //20px
+  4: $h4-font-size,   //18px
+  5: $h5-font-size,   //20px
+  6: $h6-font-size,   //16px
+  7: $h7-font-size,   //14px
+  8: $h8-font-size,   //12px
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1472,9 +1473,9 @@ $placeholder-opacity-min:           .2 !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0rem;//$spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;  //8px
-$card-title-color:                  null !default;
+$card-title-color:                  #292928;//null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 0px;//var(--#{$prefix}border-width) !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
@@ -1486,7 +1487,7 @@ $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
-$card-color:                        null !default;
+$card-color:                        $neutral-700;//null !default;
 $card-bg:                           var(--#{$prefix}body-bg) !default;
 $card-img-overlay-padding:          12px !default;//$spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
@@ -1623,7 +1624,7 @@ $badge-font-weight:                 $font-weight-bold !default;
 $badge-color:                       $white !default;
 $badge-padding-y:                   0px;//.35em !default;
 $badge-padding-x:                   4px;//.65em !default;
-$badge-border-radius:               var(--#{$prefix}border-radius) !default;
+$badge-border-radius:               $border-radius-xxs;//var(--#{$prefix}border-radius) !default;
 // scss-docs-end badge-variables
 
 
@@ -1711,14 +1712,14 @@ $progress-bar-transition:           width .6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color:                  var(--#{$prefix}body-color) !default;
+$list-group-color:                  $neutral-700;//var(--#{$prefix}body-color) !default;
 $list-group-bg:                     var(--#{$prefix}body-bg) !default;
-$list-group-border-color:           var(--#{$prefix}border-color) !default;
+$list-group-border-color:           $neutral-100;//var(--#{$prefix}border-color) !default;
 $list-group-border-width:           var(--#{$prefix}border-width) !default;
 $list-group-border-radius:          var(--#{$prefix}border-radius) !default;
 
-$list-group-item-padding-y:         $spacer * .5 !default;
-$list-group-item-padding-x:         $spacer !default;
+$list-group-item-padding-y:         $spacer * .75;//$spacer * .5 !default;
+$list-group-item-padding-x:         0rem;//$spacer !default;
 // fusv-disable
 $list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
 $list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0

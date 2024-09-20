@@ -20,9 +20,11 @@
   }
   ul, ol, li {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
   }
-  small {
-    line-height: 1.6;
+  small, span {
+    line-height: 1.6rem;
   }
 h2 {
   font-weight: bold;
