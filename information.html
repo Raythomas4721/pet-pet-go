@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Information</title>
-    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-a4252699.js"></script>
-    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-c3f288a9.css">
+    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-1371402e.js"></script>
+    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-46a1bae6.css">
   </head>
-  <body>
-    <header>
+<body>
+  <header>
     <div class="container">
         <div class="navbar pt-6">
-            <h1><a href="./index.html"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
+            <h1><a href="index.html"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
             <a href="#" class="bg-btn-rounded">
                 <span class="material-symbols-outlined fs-2 text-primary-700">
                     notifications
@@ -20,42 +20,97 @@
             </a>
         </div>
     </div>
-</header>    <h1>確認資訊</h1>
-    <footer class="footer container fixed-bottom bg-white">
-    <ul class="nav justify-content-between pb-4">
+</header>
+  <div class="container py-5">
+    <div class="d-flex gap-4">
+      <input class="material-symbols-outlined bg-white p-0 border-0" type ="button" onclick="history.back()" value="chevron_backward">
+      <h2 class="fs-4 fw-medium">個人資料確認</h2>
+    </div>
+  </div>
+  <form action="">
+    <div class="container bg-white py-8">
+      <div class="d-flex flex-column gap-6">
+        <div class="input-group" style="height: 56px;">
+          <span class="material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-name">account_circle</span>
+          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1" style="letter-spacing: 0.1px;" aria-describedby="ifo-name" value="李小珉" readonly>
+        </div>
+        <div class="input-group" style="height: 56px;">
+          <span class="material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-mail">mail</span>
+          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1" style="letter-spacing: 0.1px;" aria-describedby="ifo-mail" value="svt2015@gmail.com" readonly>
+        </div>
+        <div class="input-group" style="height: 56px;">
+          <span class="material-symbols-outlined fill-1 input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-phone">smartphone</span>
+          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1" style="letter-spacing: 0.1px;" aria-describedby="ifo-phone" value="0900 111 222" readonly>
+        </div>
+      </div>
+    </div>
+    <div class="py-2" style="background-color: #F5F5F4;">
+      <div class="card flex-row gap-4 bg-secondary-50 p-4 rounded-0">
+        <img class="object-fit-cover rounded-1" style="width: 96px; height: 96px;" src="/pet-pet-go/assets/image (6)-06b9921e.jpg" alt="hotel">
+        <div class="card-body p-0">
+          <h3 class="card-title">台東毛爸綠島包棟民宿</h3>
+          <p class="card-text">台東縣綠島鄉</p>
+          <p class="card-text">7月14日―7月16日(2晚)</p>
+          <p class="card-text">豪華寵物雙人套房 x1</p>
+        </div>
+      </div>
+    </div>
+    <div class="pb-2" style="background-color: #F5F5F4;">
+      <div class="container bg-white">
+        <p class="fs-8">寵物夥伴</p>
+      </div>
+      
+    </div>
+  </form>
+  
+  <div class="container py-3">
+    <div class="">
+      <div class="d-flex flex-column">
+        <span class="small text-tertiary">每晚最低</span>
+        <span class="fs-3 fw-bold text-neutral-950" style="letter-spacing: 0.1px;">TWD 6,000</span>
+      </div>
+    </div>
+    <a class="w-100" href="order.html">
+      <button class="btn btn-primary w-100 fs-4 fw-bold lh-lg rounded-1" type="button">預定</button>
+    </a>
+  </div>
+
+  <footer class="footer container fixed-bottom bg-white">
+    <ul class="nav justify-content-between align-items-center" style="height: 64px;">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center" href="./search.html">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="../pages/search.html">
             <span class="material-symbols-outlined">search</span>
             <small>搜尋</small>
           </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
                 <span class="material-symbols-outlined">pets</span>
                 <small>收藏</small>
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center" href="./order.html">
+            <a class="nav-link d-flex flex-column align-items-center p-0" href="../pages/order.html">
                 <span class="material-symbols-outlined fill-1">hotel</span>
                 <small>訂單</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center" href="./information.html">
+            <a class="nav-link d-flex flex-column align-items-center p-0" href="../pages/information.html">
                 <span class="material-symbols-outlined fill-1">send</span>
                 <small>訊息</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center" href="#">
+            <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
                 <span class="material-symbols-outlined fill-1">account_circle</span>
                 <small>個人</small>
             </a>
         </li>
     </ul>
 </footer>
+  <!-- <div style="height: 70px;"></div> -->
 
-    
-  </body>
+  
+</body>
 </html>
