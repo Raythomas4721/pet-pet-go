@@ -26,7 +26,7 @@ var swiper3 = new Swiper(".card-img-Swiper", {
   },
 });
 
-var swiper1 = new Swiper(".commentSwiper", {
+var swiper4 = new Swiper(".commentSwiper", {
   width: 210,
   spaceBetween: 12,
 });

@@ -1,7 +1,18 @@
+// swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    padding: 0;
+  }
+
 .card-img-Swiper {
     .swiper-pagination {
+        position: relative;
         width: 48px;
         height: 24px;
+        display: flex;
         justify-content: center;
         align-items: center;
         top: calc(100% - 24px);
