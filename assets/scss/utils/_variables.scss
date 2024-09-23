@@ -679,7 +679,7 @@ $border-radius-2xl:           $border-radius-xl !default; // Deprecated in v5.3.
 
 // scss-docs-start box-shadow-variables
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-sm:               0px 0px 25px 0px #33333326;//0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables

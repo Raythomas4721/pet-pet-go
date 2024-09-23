@@ -4,11 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>訂單成立</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-    <h1>訂單成立</h1>
+    <!-- <%- include('./layout/header'); -%> -->
+    <div class="container mb-16" style="height:  max(630px, 100vh - 64px);">
+      <div class="d-flex flex-column h-100">
+        <div class="d-flex justify-content-start align-items-center gap-2" style="min-height: 78px;">
+          <span class="material-symbols-outlined text-notice-500">check_circle</span>
+          <h2 >恭喜您已完成訂房！</h2>
+        </div>
+        <div class="card mt-8">
+          <img class="card-img object-fit-cover" src="../assets/images/hot/hotHotel-1.jpg" alt="hotHotel">
+          <div class="card-body d-flex flex-column gap-1 py-3">
+            <h3 class="card-title fs-4 fw-bold mb-0">台東毛爸綠島包棟民宿</h3>
+            <p class="card-text fs-8">台東縣綠島鄉漁港136號951</p>
+            <p class="card-text small text-neutral-950">7月14日―7月16日(2晚) • 豪華寵物雙人套房 </p>
+            <div class="d-flex gap-2 text-neutral-950">
+              <span class="card-text small">訂單編號</span>
+              <span class="card-text small">00000 00001</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-auto d-flex flex-column gap-4 py-6">
+          <a class="w-100" href="index.html">
+            <button class="btn btn-primary w-100 fs-4 fw-bold lh-lg rounded-1" type="button">回首頁</button>
+          </a>
+          <a class="w-100" href="#">
+            <button class="btn btn-outline-primary w-100 fs-6 text-neutral-950 lh-lg rounded-1" type="button">查看訂單</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
