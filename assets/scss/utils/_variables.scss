@@ -1122,10 +1122,10 @@ $form-switch-checked-bg-position: right center !default;
 
 // scss-docs-start input-group-variables
 $input-group-addon-padding-y:           $input-padding-y !default;
-$input-group-addon-padding-x:           $input-padding-x !default;
+$input-group-addon-padding-x:           12px;//$input-padding-x !default;
 $input-group-addon-font-weight:         $input-font-weight !default;
 $input-group-addon-color:               $input-color !default;
-$input-group-addon-bg:                  var(--#{$prefix}tertiary-bg) !default;
+$input-group-addon-bg:                  $white;//var(--#{$prefix}tertiary-bg) !default;
 $input-group-addon-border-color:        $input-border-color !default;
 // scss-docs-end input-group-variables
 
@@ -1481,7 +1481,7 @@ $card-border-width:                 0px;//var(--#{$prefix}border-width) !default
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                var(--#{$prefix}border-radius) !default;
 $card-box-shadow:                   null !default;
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+$card-inner-border-radius:          12px;//subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
