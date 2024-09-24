@@ -14,6 +14,11 @@ var swiper1 = new Swiper(".mySwiper-1", {
 });
 
 var swiper2 = new Swiper(".mySwiper-2", {
+  modules: [Autoplay],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   spaceBetween: 24,
   slidesPerView: 1.3,
 });
