@@ -4,6 +4,14 @@
   background-position: center;
   background-size: cover;
 }
+// 背景暗化效果
+.bg-effect {
+  filter: brightness(80%); 
+  transition: filter 0.4s ease;
+}
+.bg-effect:hover {
+  filter: brightness(100%);
+}
 
 // 拉狀的bar
 .dragBar {
@@ -22,7 +30,9 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  z-index: 1;
+  z-index: 2;
+  right: 12px;
+  top: 12px;
 }
 .bg-btn-rounded::before {
   content: "";
@@ -30,9 +40,9 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #f1f1f1;
+  background-color: #f6f6f5;
   z-index: -1;
 }
 .bg-btn-rounded:hover::before {
-  background-color: #e0e0e0;
+  background-color: #dcdbdb;
 }

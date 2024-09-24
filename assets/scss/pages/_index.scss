@@ -28,6 +28,11 @@
   padding: 12px;
   width: 100%;
   border-radius: 12px;
+  border: none;
+}
+.btn-search:hover {
+  background-color: map-get($theme-colors , "neutral-200" );
+  color: white;
 }
 // home-form-offcanvas-part
 .offcanvas {
@@ -88,3 +93,5 @@
 .dogZone .card {
   height: 190px;
 }
+
+// bg-btn 
