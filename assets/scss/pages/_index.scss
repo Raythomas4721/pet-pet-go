@@ -31,12 +31,12 @@
   border: none;
 }
 .btn-search:hover {
-  background-color: map-get($theme-colors , "neutral-200" );
+  background-color: map-get($theme-colors, "neutral-200");
   color: white;
 }
 // home-form-offcanvas-part
 .offcanvas {
-  --bs-offcanvas-height: 65vh;
+  --bs-offcanvas-height: 70vh;
 }
 .search-item {
   position: relative;
@@ -55,7 +55,7 @@
 .calendar-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
 }
 // people counting
 .countingBox {
@@ -76,13 +76,13 @@
     font-weight: normal;
   }
   .count-btn::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: #f1f1f1;
-    z-index: -1; 
+    z-index: -1;
   }
   .count-btn:hover::before {
     background-color: #e0e0e0;
@@ -94,4 +94,57 @@
   height: 190px;
 }
 
-// bg-btn 
+.calendar-body {
+  padding: 16px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  text-align: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.calendar-table th::before,
+.calendar-table td::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: -1;
+}
+
+.calendar-table td {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar-table td.selected {
+  background-color: #fe9839;
+  color: white;
+}
+
+.calendar-table td.range-selected {
+  background-color:#FBF9C6;
+  border-radius: 0;
+}
+.calendar-table td.range-selected-left::before {
+  content: '';
+  top: 0;
+  left: 40%;
+  background-color:#FBF9C6;
+  border-radius: 0;
+}
+.calendar-table td.range-selected-right::before {
+  content: '';
+  top: 0;
+  left: 0;
+  background-color:#FBF9C6;
+  border-radius: 0;
+}
+.date-summary {
+  box-shadow: 0 -2px 6px 0px #33333326;
+}
