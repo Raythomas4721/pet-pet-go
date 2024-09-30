@@ -1,3 +1,18 @@
+::placeholder { /* CSS 3 標準 */
+    font-weight: 400;
+}
+::-webkit-input-placeholder {   /* Chrome, Safari */
+    font-weight: 400;
+}
+
 .form-select {
     border-color: $primary;
+}
+
+.was-validated {
+    .form-icon {
+        border-color: $form-feedback-invalid-color;
+    }
+    // .form-control:invalid{
+    // }
 }
