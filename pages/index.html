@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Pet Go</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -44,7 +43,7 @@
                         location_on
                       </span>
                       <div class="ps-9 ">
-                        <a class="fs-7 d-block stretched-link" href="#">桔達大賣店</a>
+                        <a class="fs-7 d-block stretched-link" href="#" data-bs-target="#datePickerOffcanvas" aria-controls="datePickerOffcanvas">桔達大賣店</a>
                         <small class="fs-8 text-neutral-400">台南市光榮路689號</small>
                       </div>
                     </div>
@@ -94,17 +93,127 @@
           </div>
           <div class="offcanvas offcanvas-bottom" tabindex="-1" id="datePickerOffcanvas"
             aria-labelledby="datePickerOffcanvasLabel">
-            <div class="offcanvas-header d-block">
+            <div class="offcanvas-header d-block mb-16">
               <div class="dragBar"></div>
             </div>
             <div class="offcanvas-body">
-
-              Date: <div id="datepicker"></div>
-              <label for="from">From</label>
-              <input type="text" id="from" name="from">
-              <label for="to">to</label>
-              <input type="text" id="to" name="to">
-
+              <div class="calendar-body">
+                <h4 class="text-center text-bold mb-4">2024 <span class="ps-3">7</span></h4>
+                <table class="calendar-table w-100 fs-6 mb-6">
+                  <thead>
+                    <tr>
+                      <th class="fw-medium">一</th>
+                      <th class="fw-medium">二</th>
+                      <th class="fw-medium">三</th>
+                      <th class="fw-medium">四</th>
+                      <th class="fw-medium">五</th>
+                      <th class="fw-medium">六</th>
+                      <th class="fw-medium">日</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-neutral-200">1</td>
+                      <td class="text-neutral-200">2</td>
+                      <td class="text-neutral-200">3</td>
+                      <td class="text-neutral-200">4</td>
+                      <td class="text-neutral-200">5</td>
+                      <td class="text-neutral-200">6</td>
+                      <td class="text-neutral-200">7</td>
+                    </tr>
+                    <tr>
+                      <td class="text-neutral-200">8</td>
+                      <td class="text-neutral-200">9</td>
+                      <td class="text-neutral-200">10</td>
+                      <td class="text-neutral-200">11</td>
+                      <td class="text-neutral-200">12</td>
+                      <td class="text-neutral-200">13</td>
+                      <td class="selected range-selected-left">14</td>
+                    </tr>
+                    <tr>
+                      <td class="range-selected">15</td>
+                      <td class="selected range-selected-right">16</td>
+                      <td>17</td>
+                      <td>18</td>
+                      <td>19</td>
+                      <td>20</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>23</td>
+                      <td>24</td>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>30</td>
+                      <td>31</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 class="text-center text-bold mb-4">2024 <span class="ps-3">8</span></h4>
+                <table class="calendar-table w-100 fs-6">
+                  <thead>
+                    <tr>
+                      <th class="fw-medium">一</th>
+                      <th class="fw-medium">二</th>
+                      <th class="fw-medium">三</th>
+                      <th class="fw-medium">四</th>
+                      <th class="fw-medium">五</th>
+                      <th class="fw-medium">六</th>
+                      <th class="fw-medium">日</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>17</td>
+                      <td>18</td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+            <div class="date-summary ps-4 pe-4 pb-4">
+              <div class="mt-3 mb-6">
+                <div class="d-flex flex-column">
+                  <div class="d-flex justify-content-between mb-4">
+                    <span class="text-neutral-400 fs-7">入住日期</span>
+                    <span class="text-neutral-400 fs-7">退房日期</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5>7 <span class="ms-4">14</span></h5>
+                    <span class="material-symbols-outlined lh-lg text-neutral-950">
+                      arrow_forward
+                    </span>
+                    <h5>7<span class="ms-4">16</span></h5>
+                  </div>
+                </div>
+              </div>
               <button class="w-100 btn btn-primary mt-3" id="confirmDates">選擇日期 (2晚)</button>
             </div>
           </div>
@@ -114,59 +223,59 @@
             </span>
             <input type="text" class="form-control lh-lg rounded-bottom-3 shadow-none" data-bs-toggle="offcanvas"
               data-bs-target="#peopleCount" aria-controls="peopleCount" placeholder="1間房 – 2位成人・1隻寵物">
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="peopleCount"
-              aria-labelledby="destinationSelectLabel">
-              <div class="offcanvas-header d-block mb-4">
-                <div class="dragBar"></div>
-                <h2 class="offcanvas-title text-center pt-4 pb-4 fw-bold" id="peopleCountLabel">選擇客房與住客數量</h2>
-              </div>
-              <div class="offcanvas-body">
-                <div class="container">
-                  <div class="peopleDisplay lh-lg">
-                    <div class="display-item pt-2 pb-2 border-bottom">
-                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
-                        <p class="fs-6">客房</p>
-                        <div class="countingBox">
-                          <a href="#" class="count-btn">-</a>
-                          1
-                          <a href="#" class="count-btn">+</a>
-                        </div>
+          </div>
+          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="peopleCount"
+            aria-labelledby="destinationSelectLabel">
+            <div class="offcanvas-header d-block mb-4">
+              <div class="dragBar"></div>
+              <h2 class="offcanvas-title text-center pt-4 pb-4 fw-bold" id="peopleCountLabel">選擇客房與住客數量</h2>
+            </div>
+            <div class="offcanvas-body">
+              <div class="container">
+                <div class="peopleDisplay lh-lg">
+                  <div class="display-item pt-2 pb-2 border-bottom">
+                    <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                      <p class="fs-6">客房</p>
+                      <div class="countingBox">
+                        <a href="#" class="count-btn">-</a>
+                        1
+                        <a href="#" class="count-btn">+</a>
                       </div>
                     </div>
-                    <div class="display-item pt-2 pb-2 border-bottom">
-                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
-                        <p class="fs-6">成人</p>
-                        <div class="countingBox">
-                          <a href="#" class="count-btn">-</a>
-                          2
-                          <a href="#" class="count-btn">+</a>
-                        </div>
+                  </div>
+                  <div class="display-item pt-2 pb-2 border-bottom">
+                    <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                      <p class="fs-6">成人</p>
+                      <div class="countingBox">
+                        <a href="#" class="count-btn">-</a>
+                        2
+                        <a href="#" class="count-btn">+</a>
                       </div>
                     </div>
-                    <div class="display-item pt-2 pb-2 border-bottom">
-                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
-                        <p class="fs-6">孩童</p>
-                        <div class="countingBox">
-                          <a href="#" class="count-btn">-</a>
-                          0
-                          <a href="#" class="count-btn">+</a>
-                        </div>
+                  </div>
+                  <div class="display-item pt-2 pb-2 border-bottom">
+                    <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                      <p class="fs-6">孩童</p>
+                      <div class="countingBox">
+                        <a href="#" class="count-btn">-</a>
+                        0
+                        <a href="#" class="count-btn">+</a>
                       </div>
                     </div>
-                    <div class="display-item pt-2 pb-2 border-bottom">
-                      <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
-                        <p class="fs-6">寵物</p>
-                        <div class="countingBox">
-                          <a href="#" class="count-btn">-</a>
-                          1
-                          <a href="#" class="count-btn">+</a>
-                        </div>
+                  </div>
+                  <div class="display-item pt-2 pb-2 border-bottom">
+                    <div class="pt-3 pb-3 d-flex justify-content-between align-items-center">
+                      <p class="fs-6">寵物</p>
+                      <div class="countingBox">
+                        <a href="#" class="count-btn">-</a>
+                        1
+                        <a href="#" class="count-btn">+</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="w-100 btn btn-primary mt-3" id="confirmPeopleCount">確定</button>
               </div>
+              <button class="w-100 btn btn-primary mt-3" formaction="search.html" >確定</button>
             </div>
           </div>
         </div>
@@ -459,41 +568,6 @@
 
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
-      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-      <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
-      <script>
-        $( function() {
-          var dateFormat = "mm/dd/yy",
-            from = $( "#from" )
-              .datepicker({
-                defaultDate: "+1w",
-                changeMonth: true,
-                numberOfMonths: 3
-              })
-              .on( "change", function() {
-                to.datepicker( "option", "minDate", getDate( this ) );
-              }),
-            to = $( "#to" ).datepicker({
-              defaultDate: "+1w",
-              changeMonth: true,
-              numberOfMonths: 3
-            })
-            .on( "change", function() {
-              from.datepicker( "option", "maxDate", getDate( this ) );
-            });
-       
-          function getDate( element ) {
-            var date;
-            try {
-              date = $.datepicker.parseDate( dateFormat, element.value );
-            } catch( error ) {
-              date = null;
-            }
-       
-            return date;
-          }
-        } );
-      </script>
 </body>
 
 </html>
