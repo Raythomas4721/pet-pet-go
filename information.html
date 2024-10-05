@@ -5,42 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人資料確認</title>
-    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-c3d3b3f2.js"></script>
-    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-1ea4c5ad.css">
+    <script type="module" crossorigin src="/pet-pet-go/assets/bootstrap.min-71a375c6.js"></script>
+    <link rel="stylesheet" href="/pet-pet-go/assets/bootstrap-1802a9db.css">
   </head>
 <body>
-  <header>
-    <div class="container">
-        <div class="navbar pt-6">
-            <h1><a href="./index.html"><img src="/pet-pet-go/assets/logo-34352785.svg" alt="logo"></a></h1>
-            <a href="#" class="bg-btn-rounded">
-                <span class="material-symbols-outlined fs-2 text-primary-700">
-                    notifications
-                </span>
-            </a>
-        </div>
-    </div>
-</header>
   <div class="container py-5">
     <div class="d-flex gap-4">
       <input class="material-symbols-outlined bg-white p-0 border-0" type ="button" onclick="history.back()" value="chevron_backward">
       <h2 class="fs-4 fw-medium">個人資料確認</h2>
     </div>
   </div>
-  <form action="">
+
+  <form action="order.html" class="needs-validation" novalidate>
     <div class="container bg-white py-8">
       <div class="d-flex flex-column gap-6">
         <div class="input-group" style="height: 56px;">
-          <span class="material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-name">account_circle</span>
-          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" aria-describedby="ifo-name" value="李小珉" readonly>
+          <span class="form-icon material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-name">account_circle</span>
+          <!-- <div class="form-floating"> -->
+            <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" 
+                  aria-describedby="ifo-name" 
+                  placeholder="請輸入性名"
+                  value="李小珉"
+                  required>
+            <!-- <label for="floatingInput">姓名*</label> -->
+          <!-- </div> -->
+          <div class="invalid-feedback"><p class="fs-8 text-accent ms-4">請輸入您的姓名</p></div>
         </div>
         <div class="input-group" style="height: 56px;">
-          <span class="material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-mail">mail</span>
-          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" aria-describedby="ifo-mail" value="svt2015@gmail.com" readonly>
+          <span class="form-icon material-symbols-outlined input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-mail">mail</span>
+          <input type="email" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" 
+                aria-describedby="ifo-email" 
+                placeholder="請輸入mail"
+                value="svt2015@gmail.com" 
+                required>
+          <div class="invalid-feedback"><p class="fs-8 text-accent ms-4">請輸入您的mail</p></div>
         </div>
         <div class="input-group" style="height: 56px;">
           <span class="material-symbols-outlined fill-1 input-group-text fs-2 text-tertiary border-end-0 rounded-start-1" id="ifo-phone">smartphone</span>
-          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" aria-describedby="ifo-phone" value="0900 111 222" readonly>
+          <input type="text" class="form-control lh-lg ps-0 border-start-0 rounded-end-1 ls-d1" 
+                onkeyup="value=value.replace(/[^\d]/g,'') "
+                aria-describedby="ifo-phone" 
+                placeholder="請輸入手機電話"
+                value="0900 111 222" 
+                required>
+          <div class="invalid-feedback"><p class="fs-8 text-accent ms-4">請輸入您的手機電話</p></div>
         </div>
       </div>
     </div>
@@ -119,24 +127,21 @@
       </div>
     </div>
       
-  </form>
-  
-  <div class="container py-3 border-top border-neutral-100 mb-16">
-    <div class="">
-      <div class="d-flex justify-content-between align-items-center">
-        <span class="fs-3 fw-bold text-neutral-950 ls-d1">TWD 9,000</span>
-        <span class="small text-tertiary">將在7月11日自動扣款</span>
+    <div class="container py-3 border-top border-neutral-100 mb-16">
+      <div class="">
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fs-3 fw-bold text-neutral-950 ls-d1">TWD 9,000</span>
+          <span class="small text-tertiary">將在7月11日自動扣款</span>
+        </div>
       </div>
+        <button class="btn btn-primary w-100 fs-4 fw-bold lh-lg rounded-1" type="submit">預定</button>
     </div>
-    <a class="w-100" href="order.html">
-      <button class="btn btn-primary w-100 fs-4 fw-bold lh-lg rounded-1" type="button">預定</button>
-    </a>
-  </div>
+  </form>
 
-  <footer class="footer container fixed-bottom bg-white shadow-sm">
+  <!-- <footer class="footer container fixed-bottom bg-white shadow-sm">
     <ul class="nav justify-content-between align-items-center" style="height: 64px;">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5" href="./search.html">
+          <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5 active" href="index.html">
             <span class="material-symbols-outlined">search</span>
             <small>搜尋</small>
           </a>
@@ -148,13 +153,13 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5" href="./order.html">
+            <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5" href="#">
                 <span class="material-symbols-outlined fill-1">hotel</span>
                 <small>訂單</small>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5" href="../pages/information.html">
+            <a class="nav-link d-flex flex-column align-items-center ps-5 pe-5" href="#">
                 <span class="material-symbols-outlined fill-1">send</span>
                 <small>訊息</small>
             </a>
@@ -167,8 +172,30 @@
         </li>
     </ul>
 </footer>
-  <!-- <div style="height: 70px;"></div> -->
+ -->
 
   
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 </html>
