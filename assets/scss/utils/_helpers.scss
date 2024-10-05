@@ -23,7 +23,7 @@
 
 // span 背後圓圈 44px
 .bg-btn-rounded {
-  position: relative;
+  // position: relative;
   width: 44px;
   height: 44px;
   display: flex;
@@ -31,8 +31,8 @@
   align-items: center;
   text-decoration: none;
   z-index: 2;
-  right: 12px;
-  top: 12px;
+  // right: 12px;
+  // top: 12px;
 }
 .bg-btn-rounded::before {
   content: "";

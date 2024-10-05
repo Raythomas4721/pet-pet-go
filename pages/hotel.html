@@ -7,9 +7,7 @@
   <title>Hotel</title>
 </head>
 <body>
-  <%- include('./layout/header'); -%>
-
-  <div class="container py-5">
+  <div class="container fixed-top bg-white shadow-sm py-5">
     <div class="d-flex gap-6">
       <input class="material-symbols-outlined bg-white p-0 border-0 me-auto" type ="button" onclick="history.back()" value="arrow_back_ios">
       <span class="material-symbols-outlined fill-1 text-accent">share</span>
@@ -18,7 +16,7 @@
       </a>
     </div>
   </div>
-  <div class="swiper card-img-Swiper">
+  <div class="swiper card-img-Swiper pt-16">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img class="w-100 object-fit-cover" style="height: 200px;" src="../assets/images/search/Fixed-aspect-ratio-spacer (4).jpg" alt="Hotel-1">
@@ -229,7 +227,7 @@
       </div>
     </ul>
   </div>
-  <div class="fixed-bottom bg-white border-top border-neutral-100 mb-16 shadow-sm">
+  <div class="fixed-bottom bg-white border-top border-neutral-100 shadow-sm">
     <div class="container">
       <div class="row row-cols-2 align-items-center" style="--bs-gutter-x: 0rem;height: 70px;">
         <div class="col">
@@ -244,9 +242,6 @@
       </div>
     </div>
   </div>
-  
-  <%- include('./layout/footer'); -%>
-
   <script type="module" src="../main.js"></script>
 </body>
 </html>

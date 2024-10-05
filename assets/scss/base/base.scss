@@ -6,6 +6,8 @@ ul,
 ol,
 li {
   list-style: none;
+  margin: 0;
+	padding: 0;
 }
 h2 {
   font-weight: bold;
@@ -15,7 +17,7 @@ span, small, p {
 }
 
 @include media-breakpoint-up(sm) {
-    body, .fixed-bottom, .offcanvas {
+    body, .fixed-top, .fixed-bottom, .offcanvas {
     max-width: 430px;
     margin: 0 auto;
   }
